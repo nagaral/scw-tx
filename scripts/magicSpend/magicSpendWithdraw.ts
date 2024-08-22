@@ -4,17 +4,16 @@ import { magicSpendAbi, magicSpendAddress } from "../../generated";
 import { withdrawSignature } from "../../utils/magicSpend";
 import { client, getAccount, makeCalls } from "../base";
 
-const asset = "0x0000000000000000000000000000000000000000";
-// const amount = parseEther("0.002");
-const amount = 385319436593600n;
-// const account = "0xDB7830737F5714FE0653FBDB30d90AE221a2CF5b";
+const asset = "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913";
+const amount = 1000n;
 const account = await getAccount();
+console.log("account", account);
 const signature =
-  "0x7afba59cf36e0d432268916e22c2ae75b27a41c5e33cad20d212bb36409607f707791f62142a301b1abd29dc904c18c96bb429cbadd576c9c7c186d2839d7a5c1c";
+  "0xcb0c4e568f76cc24d76d12e8b35807ceedea622612fb809c3ea37be0769373387eb0c3a722a7228358d5157f684c851c11abdc602475b3b30a6966f51cc7aab91c";
 const nonce =
-  51601261918333157858063710354582946950475297381738514298221370516654821609035n;
+  51617215058467874105748217931011252479341335394564786443209829061725680206593n;
 const chainId = 8453;
-const expiry = 1723227288;
+const expiry = 1724285626;
 const piggyBankAddress = "0x7BCE4720a302fdCC1Fb9264D52d1b1D05a17b626";
 console.log("account", account);
 
